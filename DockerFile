@@ -1,6 +1,6 @@
-FROM python:3.8
-COPY . /app
-WORKDIR /app
-RUN pip install -r requirements.txt
-EXPOSE 5000
+from python:3.8
+copy . /app
+workdir /app
+run pip install -r requirements.txt
+expose 3000
 CMD ["python", "app.py"]
